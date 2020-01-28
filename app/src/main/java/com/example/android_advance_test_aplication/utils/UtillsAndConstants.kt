@@ -1,5 +1,4 @@
 
-import Actions.EVENT_NAME
 import Actions.EVENT_PARAM_SIX
 import webtrekk.android.sdk.ParamType
 import webtrekk.android.sdk.Webtrekk

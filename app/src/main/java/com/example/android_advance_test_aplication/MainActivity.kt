@@ -2,11 +2,11 @@ package com.example.android_advance_test_aplication
 
 import android.content.Context
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import java.io.File
 import android.widget.FrameLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.android_advance_test_aplication.utils.FLAGS_FULLSCREEN
+import java.io.File
 
 private const val IMMERSIVE_FLAG_TIMEOUT = 500L
 
