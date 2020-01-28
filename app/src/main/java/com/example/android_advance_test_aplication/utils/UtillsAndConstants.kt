@@ -26,6 +26,7 @@ fun tracking(eventParameter: String? = null, eventName: String){
         Webtrekk.getInstance().trackCustomEvent(eventName, params)
 
     }
-    Webtrekk.getInstance().trackCustomEvent(eventName)
-
+    else {
+        Webtrekk.getInstance().trackCustomEvent(eventName)
+    }
 }
