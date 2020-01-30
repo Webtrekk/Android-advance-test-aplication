@@ -23,6 +23,7 @@ import com.example.android_advance_test_aplication.R
 import com.example.android_advance_test_aplication.utils.padWithDisplayCutout
 import com.example.android_advance_test_aplication.utils.showImmersive
 import java.io.File
+import java.util.*
 
 
 val EXTENSION_WHITELIST = arrayOf("JPG")
@@ -36,7 +37,7 @@ class GalleryFragment internal constructor() : Fragment() {
     private lateinit var mediaList: MutableList<File>
 
     /** Adapter class used to present a fragment containing one photo or video as a page */
-    inner class MediaPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+    inner class MediaPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
         override fun getCount(): Int = mediaList.size
         override fun getItem(position: Int): Fragment = PhotoFragment.create(mediaList[position])
         override fun getItemPosition(obj: Any): Int = POSITION_NONE
@@ -54,7 +55,7 @@ class GalleryFragment internal constructor() : Fragment() {
         // Walk through all files in the root directory
         // We reverse the order of the list to present the last photos first
         mediaList = rootDirectory.listFiles { file ->
-            EXTENSION_WHITELIST.contains(file.extension.toUpperCase())
+            EXTENSION_WHITELIST.contains(file.extension.toUpperCase(Locale.ROOT))
         }?.sortedDescending()?.toMutableList() ?: mutableListOf()
     }
 

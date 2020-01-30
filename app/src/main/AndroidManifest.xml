@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".SampleApplication"
+        android:name=".AndroidAdvancedTestApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,9 +23,7 @@
             android:clearTaskOnLaunch="true"
             android:theme="@style/AppTheme"
             android:icon="@mipmap/ic_launcher"
-            android:screenOrientation="fullUser"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:rotationAnimation="seamless"
+            android:screenOrientation="portrait"
             tools:targetApi="O">
 
             <!-- Main app intent filter -->
