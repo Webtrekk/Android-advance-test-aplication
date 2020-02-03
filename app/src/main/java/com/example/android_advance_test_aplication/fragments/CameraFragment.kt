@@ -141,6 +141,9 @@ class CameraFragment : Fragment() {
                     .getMimeTypeFromExtension(photoFile.extension)
             MediaScannerConnection.scanFile(
                     context, arrayOf(photoFile.absolutePath), arrayOf(mimeType), null)
+
+            //If there is no error, tracking event for taking/saving image is sent
+            tracking(eventName = CLICK_CAMERA_BUTTON, eventParameter = TAKE_PICTURE)
         }
     }
 
@@ -304,7 +307,6 @@ class CameraFragment : Fragment() {
                     }, ANIMATION_SLOW_MILLIS)
                 }
             }
-            tracking(eventName = CLICK_CAMERA_BUTTON, eventParameter = TAKE_PICTURE)
         }
 
         // Listener for button used to switch cameras
