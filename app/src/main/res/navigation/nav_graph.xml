@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/permissions_fragment"
-        android:name="com.example.android_advance_test_aplication.fragments.PermissionsFragment"
+        android:name="com.example.android_advanced_test_application.fragments.PermissionsFragment"
         android:label="PermissionsFragment" >
 
         <action
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/camera_fragment"
-        android:name="com.example.android_advance_test_aplication.fragments.CameraFragment"
+        android:name="com.example.android_advanced_test_application.fragments.CameraFragment"
         android:label="CameraFragment" >
 
         <action
@@ -58,7 +58,7 @@
 
     <fragment
         android:id="@+id/gallery_fragment"
-        android:name="com.example.android_advance_test_aplication.fragments.GalleryFragment"
+        android:name="com.example.android_advanced_test_application.fragments.GalleryFragment"
         android:label="GalleryFragment" >
         <argument
             android:name="root_directory"
@@ -71,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.example.android_advance_test_aplication.fragments.MainFragment"
+        android:name="com.example.android_advanced_test_application.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

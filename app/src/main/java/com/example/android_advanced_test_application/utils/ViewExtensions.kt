@@ -1,4 +1,4 @@
-package com.example.android_advance_test_aplication.utils
+package com.example.android_advanced_test_application.utils
 
 import android.os.Build
 import android.view.DisplayCutout

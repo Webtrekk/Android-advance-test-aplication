@@ -1,4 +1,4 @@
-package com.example.android_advance_test_aplication.fragments
+package com.example.android_advanced_test_application.fragments
 
 import Actions.CHANGE_CAMERA
 import Actions.CHANGE_FLASH_SETTING
@@ -34,10 +34,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.android_advance_test_aplication.MainActivity
-import com.example.android_advance_test_aplication.R
-import com.example.android_advance_test_aplication.utils.ANIMATION_FAST_MILLIS
-import com.example.android_advance_test_aplication.utils.ANIMATION_SLOW_MILLIS
+import com.example.android_advanced_test_application.MainActivity
+import com.example.android_advanced_test_application.R
+import com.example.android_advanced_test_application.utils.ANIMATION_FAST_MILLIS
+import com.example.android_advanced_test_application.utils.ANIMATION_SLOW_MILLIS
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import tracking

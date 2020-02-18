@@ -1,4 +1,4 @@
-package com.example.android_advance_test_aplication.fragments
+package com.example.android_advanced_test_application.fragments
 
 import android.content.Intent
 import android.media.MediaScannerConnection
@@ -18,10 +18,10 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import androidx.viewpager.widget.ViewPager
-import com.example.android_advance_test_aplication.BuildConfig
-import com.example.android_advance_test_aplication.R
-import com.example.android_advance_test_aplication.utils.padWithDisplayCutout
-import com.example.android_advance_test_aplication.utils.showImmersive
+import com.example.android_advanced_test_application.BuildConfig
+import com.example.android_advanced_test_application.R
+import com.example.android_advanced_test_application.utils.padWithDisplayCutout
+import com.example.android_advanced_test_application.utils.showImmersive
 import java.io.File
 import java.util.*
 

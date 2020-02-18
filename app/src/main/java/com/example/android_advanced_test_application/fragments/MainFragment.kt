@@ -1,4 +1,4 @@
-package com.example.android_advance_test_aplication.fragments
+package com.example.android_advanced_test_application.fragments
 
 import Actions.ACCESS_CAMERA
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.example.android_advance_test_aplication.R
+import com.example.android_advanced_test_application.R
 import tracking
 
 /**
