@@ -1,4 +1,4 @@
-package com.example.android_advanced_test_application.fragments
+package com.webtrekk.example.fragments
 
 import Actions.CHANGE_CAMERA
 import Actions.CHANGE_FLASH_SETTING
@@ -34,10 +34,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.android_advanced_test_application.MainActivity
-import com.example.android_advanced_test_application.R
-import com.example.android_advanced_test_application.utils.ANIMATION_FAST_MILLIS
-import com.example.android_advanced_test_application.utils.ANIMATION_SLOW_MILLIS
+import com.webtrekk.example.MainActivity
+import com.webtrekk.example.R
+import com.webtrekk.example.utils.ANIMATION_FAST_MILLIS
+import com.webtrekk.example.utils.ANIMATION_SLOW_MILLIS
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import tracking

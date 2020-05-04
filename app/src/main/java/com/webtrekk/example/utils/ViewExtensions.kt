@@ -1,4 +1,4 @@
-package com.example.android_advanced_test_application.utils
+package com.webtrekk.example.utils
 
 import android.os.Build
 import android.view.DisplayCutout

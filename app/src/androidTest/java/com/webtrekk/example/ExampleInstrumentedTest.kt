@@ -1,4 +1,4 @@
-package com.example.android_advanced_test_application
+package com.webtrekk.example
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

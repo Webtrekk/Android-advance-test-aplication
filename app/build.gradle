@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.android_advanced_test_application"
+        applicationId "com.webtrekk.example"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -69,8 +69,10 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.10.0'
 
     //Webtrekk
-    implementation 'com.webtrekk.webtrekksdk:webtrekksdk-android:5.0.0'
+    implementation 'com.webtrekk.webtrekksdk:webtrekksdk-android:5.0.1-beta2'
+    implementation "org.koin:koin-android:2.1.5"
 
+    implementation "org.koin:koin-androidx-scope:2.1.5"
     //Work manager
     implementation 'androidx.work:work-runtime-ktx:2.3.0'
 }

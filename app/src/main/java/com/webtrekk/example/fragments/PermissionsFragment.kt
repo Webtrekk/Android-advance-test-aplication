@@ -1,4 +1,4 @@
-package com.example.android_advanced_test_application.fragments
+package com.webtrekk.example.fragments
 
 import android.Manifest
 import android.content.Context
@@ -7,8 +7,8 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.example.android_advanced_test_application.MainActivity
-import com.example.android_advanced_test_application.R
+import com.webtrekk.example.MainActivity
+import com.webtrekk.example.R
 
 private const val PERMISSIONS_REQUEST_CODE = 10
 private val PERMISSIONS_REQUIRED = arrayOf(Manifest.permission.CAMERA)

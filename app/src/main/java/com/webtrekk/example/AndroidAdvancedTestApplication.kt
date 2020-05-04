@@ -1,10 +1,12 @@
-package com.example.android_advanced_test_application
+package com.webtrekk.example
 
 import android.app.Application
 import androidx.camera.camera2.Camera2Config
 import androidx.camera.core.CameraXConfig
 import androidx.work.Constraints
 import androidx.work.NetworkType
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 import webtrekk.android.sdk.Logger
 import webtrekk.android.sdk.Webtrekk
 import webtrekk.android.sdk.WebtrekkConfiguration
@@ -19,7 +21,7 @@ class AndroidAdvancedTestApplication : Application(), CameraXConfig.Provider {
             .setRequiresBatteryNotLow(true)
             .setRequiredNetworkType(NetworkType.CONNECTED).build()
 
-        val webtrekkConfigurations =
+    val webtrekkConfigurations =
             WebtrekkConfiguration.Builder(listOf("658572554704007"), "https://webtrekkdemoapp01.wt-eu02.net")
                 .logLevel(Logger.Level.BASIC)
                 .requestsInterval(TimeUnit.MINUTES, 15)

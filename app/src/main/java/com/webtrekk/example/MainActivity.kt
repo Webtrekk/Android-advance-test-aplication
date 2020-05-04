@@ -1,11 +1,11 @@
-package com.example.android_advanced_test_application
+package com.webtrekk.example
 
 import android.content.Context
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.android_advanced_test_application.utils.FLAGS_FULLSCREEN
+import com.webtrekk.example.utils.FLAGS_FULLSCREEN
 import java.io.File
 
 private const val IMMERSIVE_FLAG_TIMEOUT = 500L
