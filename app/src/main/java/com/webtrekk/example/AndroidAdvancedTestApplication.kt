@@ -5,6 +5,7 @@ import androidx.camera.camera2.Camera2Config
 import androidx.camera.core.CameraXConfig
 import androidx.work.Constraints
 import androidx.work.NetworkType
+import com.webtrekk.example.utils.MappSharedPrefs
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import webtrekk.android.sdk.Logger
@@ -20,9 +21,13 @@ class AndroidAdvancedTestApplication : Application(), CameraXConfig.Provider {
         val constraints = Constraints.Builder()
             .setRequiresBatteryNotLow(true)
             .setRequiredNetworkType(NetworkType.CONNECTED).build()
-
-    val webtrekkConfigurations =
-            WebtrekkConfiguration.Builder(listOf("658572554704007"), "https://webtrekkdemoapp01.wt-eu02.net")
+        val trackingId = MappSharedPrefs(this).trackingId
+        val trackingDomain = MappSharedPrefs(this).trackingDomain
+        val webtrekkConfigurations =
+            WebtrekkConfiguration.Builder(
+                listOf(trackingId),
+                trackingDomain
+            )
                 .logLevel(Logger.Level.BASIC)
                 .requestsInterval(TimeUnit.MINUTES, 15)
                 .workManagerConstraints(constraints = constraints)

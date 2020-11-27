@@ -69,7 +69,7 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.10.0'
 
     //Webtrekk
-    implementation 'com.webtrekk.webtrekksdk:webtrekksdk-android:5.0.1-beta2'
+    implementation 'com.webtrekk.webtrekksdk:webtrekksdk-android:5.0.4'
     implementation "org.koin:koin-android:2.1.5"
 
     implementation "org.koin:koin-androidx-scope:2.1.5"

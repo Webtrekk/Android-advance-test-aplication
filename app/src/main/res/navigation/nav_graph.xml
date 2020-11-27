@@ -40,6 +40,12 @@
     </fragment>
 
     <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.webtrekk.example.fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+    </fragment>
+
+    <fragment
         android:id="@+id/camera_fragment"
         android:name="com.webtrekk.example.fragments.CameraFragment"
         android:label="CameraFragment" >
@@ -77,6 +83,10 @@
         <action
             android:id="@+id/action_main_fragment_to_permissions_fragment"
             app:destination="@id/permissions_fragment" />
+
+        <action
+            android:id="@+id/action_main_fragment_to_settings"
+            app:destination="@id/settings_fragment" />
     </fragment>
 
 </navigation>

@@ -31,5 +31,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="mapp_intelligence">Mapp Intelligence Test App</string>
     <string name="access_camera">Access Camera</string>
+    <string name="change_tracking_information">Change Tracking Server</string>
+    <string name="change_settings">Change Settings</string>
     <string name="test_basic_use_cases">Test basic use cases for your analytics settings</string>
 </resources>

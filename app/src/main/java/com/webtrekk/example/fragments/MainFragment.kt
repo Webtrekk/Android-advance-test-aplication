@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.webtrekk.example.R
+import com.webtrekk.example.utils.MappSharedPrefs
 import tracking
 
 /**
@@ -27,6 +28,13 @@ class MainFragment : Fragment() {
                   MainFragmentDirections.actionMainFragmentToPermissionsFragment()
             )
         }
+
+        view.findViewById<Button>(R.id.button2).setOnClickListener {
+            Navigation.findNavController(requireActivity(), R.id.fragment_container).navigate(
+                MainFragmentDirections.actionMainFragmentToSettings()
+            )
+        }
+
         return view
     }
 
